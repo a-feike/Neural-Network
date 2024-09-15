@@ -1,1 +1,9 @@
 This is my try of coding a Neural Network.
+
+Compile:
+cd build
+cmake ..
+cmake --build .
+
+run:
+./main
