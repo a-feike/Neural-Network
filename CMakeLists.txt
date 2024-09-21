@@ -12,4 +12,4 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 include_directories(include)
 
 # Add the executable, sources in src folder
-add_executable(NeuralNetwork main.cpp src/Neuron.cpp src/Layer.cpp)
+add_executable(NeuralNetwork main.cpp src/Neuron.cpp src/Layer.cpp src/InputLayer.cpp src/RandomUtils.cpp)

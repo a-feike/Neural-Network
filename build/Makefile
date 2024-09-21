@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetwork.dir/build.make CMakeFiles/NeuralNetwork.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/InputLayer.o: src/InputLayer.cpp.o
+.PHONY : src/InputLayer.o
+
+# target to build an object file
+src/InputLayer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetwork.dir/build.make CMakeFiles/NeuralNetwork.dir/src/InputLayer.cpp.o
+.PHONY : src/InputLayer.cpp.o
+
+src/InputLayer.i: src/InputLayer.cpp.i
+.PHONY : src/InputLayer.i
+
+# target to preprocess a source file
+src/InputLayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetwork.dir/build.make CMakeFiles/NeuralNetwork.dir/src/InputLayer.cpp.i
+.PHONY : src/InputLayer.cpp.i
+
+src/InputLayer.s: src/InputLayer.cpp.s
+.PHONY : src/InputLayer.s
+
+# target to generate assembly for a file
+src/InputLayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetwork.dir/build.make CMakeFiles/NeuralNetwork.dir/src/InputLayer.cpp.s
+.PHONY : src/InputLayer.cpp.s
+
 src/Layer.o: src/Layer.cpp.o
 .PHONY : src/Layer.o
 
@@ -201,6 +225,30 @@ src/Neuron.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetwork.dir/build.make CMakeFiles/NeuralNetwork.dir/src/Neuron.cpp.s
 .PHONY : src/Neuron.cpp.s
 
+src/RandomUtils.o: src/RandomUtils.cpp.o
+.PHONY : src/RandomUtils.o
+
+# target to build an object file
+src/RandomUtils.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetwork.dir/build.make CMakeFiles/NeuralNetwork.dir/src/RandomUtils.cpp.o
+.PHONY : src/RandomUtils.cpp.o
+
+src/RandomUtils.i: src/RandomUtils.cpp.i
+.PHONY : src/RandomUtils.i
+
+# target to preprocess a source file
+src/RandomUtils.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetwork.dir/build.make CMakeFiles/NeuralNetwork.dir/src/RandomUtils.cpp.i
+.PHONY : src/RandomUtils.cpp.i
+
+src/RandomUtils.s: src/RandomUtils.cpp.s
+.PHONY : src/RandomUtils.s
+
+# target to generate assembly for a file
+src/RandomUtils.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetwork.dir/build.make CMakeFiles/NeuralNetwork.dir/src/RandomUtils.cpp.s
+.PHONY : src/RandomUtils.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -213,12 +261,18 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/InputLayer.o"
+	@echo "... src/InputLayer.i"
+	@echo "... src/InputLayer.s"
 	@echo "... src/Layer.o"
 	@echo "... src/Layer.i"
 	@echo "... src/Layer.s"
 	@echo "... src/Neuron.o"
 	@echo "... src/Neuron.i"
 	@echo "... src/Neuron.s"
+	@echo "... src/RandomUtils.o"
+	@echo "... src/RandomUtils.i"
+	@echo "... src/RandomUtils.s"
 .PHONY : help
 
 

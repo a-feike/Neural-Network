@@ -6,4 +6,4 @@ cmake ..
 cmake --build .
 
 run:
-./main
+./NeuralNetwork
