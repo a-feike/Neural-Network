@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetwork.dir/build.make CMakeFiles/NeuralNetwork.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/HiddenLayer.o: src/HiddenLayer.cpp.o
+.PHONY : src/HiddenLayer.o
+
+# target to build an object file
+src/HiddenLayer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetwork.dir/build.make CMakeFiles/NeuralNetwork.dir/src/HiddenLayer.cpp.o
+.PHONY : src/HiddenLayer.cpp.o
+
+src/HiddenLayer.i: src/HiddenLayer.cpp.i
+.PHONY : src/HiddenLayer.i
+
+# target to preprocess a source file
+src/HiddenLayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetwork.dir/build.make CMakeFiles/NeuralNetwork.dir/src/HiddenLayer.cpp.i
+.PHONY : src/HiddenLayer.cpp.i
+
+src/HiddenLayer.s: src/HiddenLayer.cpp.s
+.PHONY : src/HiddenLayer.s
+
+# target to generate assembly for a file
+src/HiddenLayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetwork.dir/build.make CMakeFiles/NeuralNetwork.dir/src/HiddenLayer.cpp.s
+.PHONY : src/HiddenLayer.cpp.s
+
 src/InputLayer.o: src/InputLayer.cpp.o
 .PHONY : src/InputLayer.o
 
@@ -201,6 +225,30 @@ src/Layer.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetwork.dir/build.make CMakeFiles/NeuralNetwork.dir/src/Layer.cpp.s
 .PHONY : src/Layer.cpp.s
 
+src/NeuralNet.o: src/NeuralNet.cpp.o
+.PHONY : src/NeuralNet.o
+
+# target to build an object file
+src/NeuralNet.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetwork.dir/build.make CMakeFiles/NeuralNetwork.dir/src/NeuralNet.cpp.o
+.PHONY : src/NeuralNet.cpp.o
+
+src/NeuralNet.i: src/NeuralNet.cpp.i
+.PHONY : src/NeuralNet.i
+
+# target to preprocess a source file
+src/NeuralNet.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetwork.dir/build.make CMakeFiles/NeuralNetwork.dir/src/NeuralNet.cpp.i
+.PHONY : src/NeuralNet.cpp.i
+
+src/NeuralNet.s: src/NeuralNet.cpp.s
+.PHONY : src/NeuralNet.s
+
+# target to generate assembly for a file
+src/NeuralNet.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetwork.dir/build.make CMakeFiles/NeuralNetwork.dir/src/NeuralNet.cpp.s
+.PHONY : src/NeuralNet.cpp.s
+
 src/Neuron.o: src/Neuron.cpp.o
 .PHONY : src/Neuron.o
 
@@ -224,6 +272,30 @@ src/Neuron.s: src/Neuron.cpp.s
 src/Neuron.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetwork.dir/build.make CMakeFiles/NeuralNetwork.dir/src/Neuron.cpp.s
 .PHONY : src/Neuron.cpp.s
+
+src/OutputLayer.o: src/OutputLayer.cpp.o
+.PHONY : src/OutputLayer.o
+
+# target to build an object file
+src/OutputLayer.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetwork.dir/build.make CMakeFiles/NeuralNetwork.dir/src/OutputLayer.cpp.o
+.PHONY : src/OutputLayer.cpp.o
+
+src/OutputLayer.i: src/OutputLayer.cpp.i
+.PHONY : src/OutputLayer.i
+
+# target to preprocess a source file
+src/OutputLayer.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetwork.dir/build.make CMakeFiles/NeuralNetwork.dir/src/OutputLayer.cpp.i
+.PHONY : src/OutputLayer.cpp.i
+
+src/OutputLayer.s: src/OutputLayer.cpp.s
+.PHONY : src/OutputLayer.s
+
+# target to generate assembly for a file
+src/OutputLayer.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/NeuralNetwork.dir/build.make CMakeFiles/NeuralNetwork.dir/src/OutputLayer.cpp.s
+.PHONY : src/OutputLayer.cpp.s
 
 src/RandomUtils.o: src/RandomUtils.cpp.o
 .PHONY : src/RandomUtils.o
@@ -261,15 +333,24 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/HiddenLayer.o"
+	@echo "... src/HiddenLayer.i"
+	@echo "... src/HiddenLayer.s"
 	@echo "... src/InputLayer.o"
 	@echo "... src/InputLayer.i"
 	@echo "... src/InputLayer.s"
 	@echo "... src/Layer.o"
 	@echo "... src/Layer.i"
 	@echo "... src/Layer.s"
+	@echo "... src/NeuralNet.o"
+	@echo "... src/NeuralNet.i"
+	@echo "... src/NeuralNet.s"
 	@echo "... src/Neuron.o"
 	@echo "... src/Neuron.i"
 	@echo "... src/Neuron.s"
+	@echo "... src/OutputLayer.o"
+	@echo "... src/OutputLayer.i"
+	@echo "... src/OutputLayer.s"
 	@echo "... src/RandomUtils.o"
 	@echo "... src/RandomUtils.i"
 	@echo "... src/RandomUtils.s"

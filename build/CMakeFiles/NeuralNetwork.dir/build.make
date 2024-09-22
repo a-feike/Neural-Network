@@ -125,10 +125,52 @@ CMakeFiles/NeuralNetwork.dir/src/InputLayer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NeuralNetwork.dir/src/InputLayer.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/alex/sciebo/Computer Science/C++/NeuralNetwork/src/InputLayer.cpp" -o CMakeFiles/NeuralNetwork.dir/src/InputLayer.cpp.s
 
+CMakeFiles/NeuralNetwork.dir/src/HiddenLayer.cpp.o: CMakeFiles/NeuralNetwork.dir/flags.make
+CMakeFiles/NeuralNetwork.dir/src/HiddenLayer.cpp.o: /home/alex/sciebo/Computer\ Science/C++/NeuralNetwork/src/HiddenLayer.cpp
+CMakeFiles/NeuralNetwork.dir/src/HiddenLayer.cpp.o: CMakeFiles/NeuralNetwork.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/alex/sciebo/Computer Science/C++/NeuralNetwork/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/NeuralNetwork.dir/src/HiddenLayer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NeuralNetwork.dir/src/HiddenLayer.cpp.o -MF CMakeFiles/NeuralNetwork.dir/src/HiddenLayer.cpp.o.d -o CMakeFiles/NeuralNetwork.dir/src/HiddenLayer.cpp.o -c "/home/alex/sciebo/Computer Science/C++/NeuralNetwork/src/HiddenLayer.cpp"
+
+CMakeFiles/NeuralNetwork.dir/src/HiddenLayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NeuralNetwork.dir/src/HiddenLayer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/alex/sciebo/Computer Science/C++/NeuralNetwork/src/HiddenLayer.cpp" > CMakeFiles/NeuralNetwork.dir/src/HiddenLayer.cpp.i
+
+CMakeFiles/NeuralNetwork.dir/src/HiddenLayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NeuralNetwork.dir/src/HiddenLayer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/alex/sciebo/Computer Science/C++/NeuralNetwork/src/HiddenLayer.cpp" -o CMakeFiles/NeuralNetwork.dir/src/HiddenLayer.cpp.s
+
+CMakeFiles/NeuralNetwork.dir/src/OutputLayer.cpp.o: CMakeFiles/NeuralNetwork.dir/flags.make
+CMakeFiles/NeuralNetwork.dir/src/OutputLayer.cpp.o: /home/alex/sciebo/Computer\ Science/C++/NeuralNetwork/src/OutputLayer.cpp
+CMakeFiles/NeuralNetwork.dir/src/OutputLayer.cpp.o: CMakeFiles/NeuralNetwork.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/alex/sciebo/Computer Science/C++/NeuralNetwork/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/NeuralNetwork.dir/src/OutputLayer.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NeuralNetwork.dir/src/OutputLayer.cpp.o -MF CMakeFiles/NeuralNetwork.dir/src/OutputLayer.cpp.o.d -o CMakeFiles/NeuralNetwork.dir/src/OutputLayer.cpp.o -c "/home/alex/sciebo/Computer Science/C++/NeuralNetwork/src/OutputLayer.cpp"
+
+CMakeFiles/NeuralNetwork.dir/src/OutputLayer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NeuralNetwork.dir/src/OutputLayer.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/alex/sciebo/Computer Science/C++/NeuralNetwork/src/OutputLayer.cpp" > CMakeFiles/NeuralNetwork.dir/src/OutputLayer.cpp.i
+
+CMakeFiles/NeuralNetwork.dir/src/OutputLayer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NeuralNetwork.dir/src/OutputLayer.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/alex/sciebo/Computer Science/C++/NeuralNetwork/src/OutputLayer.cpp" -o CMakeFiles/NeuralNetwork.dir/src/OutputLayer.cpp.s
+
+CMakeFiles/NeuralNetwork.dir/src/NeuralNet.cpp.o: CMakeFiles/NeuralNetwork.dir/flags.make
+CMakeFiles/NeuralNetwork.dir/src/NeuralNet.cpp.o: /home/alex/sciebo/Computer\ Science/C++/NeuralNetwork/src/NeuralNet.cpp
+CMakeFiles/NeuralNetwork.dir/src/NeuralNet.cpp.o: CMakeFiles/NeuralNetwork.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/alex/sciebo/Computer Science/C++/NeuralNetwork/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/NeuralNetwork.dir/src/NeuralNet.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NeuralNetwork.dir/src/NeuralNet.cpp.o -MF CMakeFiles/NeuralNetwork.dir/src/NeuralNet.cpp.o.d -o CMakeFiles/NeuralNetwork.dir/src/NeuralNet.cpp.o -c "/home/alex/sciebo/Computer Science/C++/NeuralNetwork/src/NeuralNet.cpp"
+
+CMakeFiles/NeuralNetwork.dir/src/NeuralNet.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/NeuralNetwork.dir/src/NeuralNet.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/alex/sciebo/Computer Science/C++/NeuralNetwork/src/NeuralNet.cpp" > CMakeFiles/NeuralNetwork.dir/src/NeuralNet.cpp.i
+
+CMakeFiles/NeuralNetwork.dir/src/NeuralNet.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/NeuralNetwork.dir/src/NeuralNet.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/alex/sciebo/Computer Science/C++/NeuralNetwork/src/NeuralNet.cpp" -o CMakeFiles/NeuralNetwork.dir/src/NeuralNet.cpp.s
+
 CMakeFiles/NeuralNetwork.dir/src/RandomUtils.cpp.o: CMakeFiles/NeuralNetwork.dir/flags.make
 CMakeFiles/NeuralNetwork.dir/src/RandomUtils.cpp.o: /home/alex/sciebo/Computer\ Science/C++/NeuralNetwork/src/RandomUtils.cpp
 CMakeFiles/NeuralNetwork.dir/src/RandomUtils.cpp.o: CMakeFiles/NeuralNetwork.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/alex/sciebo/Computer Science/C++/NeuralNetwork/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/NeuralNetwork.dir/src/RandomUtils.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/alex/sciebo/Computer Science/C++/NeuralNetwork/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/NeuralNetwork.dir/src/RandomUtils.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/NeuralNetwork.dir/src/RandomUtils.cpp.o -MF CMakeFiles/NeuralNetwork.dir/src/RandomUtils.cpp.o.d -o CMakeFiles/NeuralNetwork.dir/src/RandomUtils.cpp.o -c "/home/alex/sciebo/Computer Science/C++/NeuralNetwork/src/RandomUtils.cpp"
 
 CMakeFiles/NeuralNetwork.dir/src/RandomUtils.cpp.i: cmake_force
@@ -145,6 +187,9 @@ NeuralNetwork_OBJECTS = \
 "CMakeFiles/NeuralNetwork.dir/src/Neuron.cpp.o" \
 "CMakeFiles/NeuralNetwork.dir/src/Layer.cpp.o" \
 "CMakeFiles/NeuralNetwork.dir/src/InputLayer.cpp.o" \
+"CMakeFiles/NeuralNetwork.dir/src/HiddenLayer.cpp.o" \
+"CMakeFiles/NeuralNetwork.dir/src/OutputLayer.cpp.o" \
+"CMakeFiles/NeuralNetwork.dir/src/NeuralNet.cpp.o" \
 "CMakeFiles/NeuralNetwork.dir/src/RandomUtils.cpp.o"
 
 # External object files for target NeuralNetwork
@@ -154,10 +199,13 @@ NeuralNetwork: CMakeFiles/NeuralNetwork.dir/main.cpp.o
 NeuralNetwork: CMakeFiles/NeuralNetwork.dir/src/Neuron.cpp.o
 NeuralNetwork: CMakeFiles/NeuralNetwork.dir/src/Layer.cpp.o
 NeuralNetwork: CMakeFiles/NeuralNetwork.dir/src/InputLayer.cpp.o
+NeuralNetwork: CMakeFiles/NeuralNetwork.dir/src/HiddenLayer.cpp.o
+NeuralNetwork: CMakeFiles/NeuralNetwork.dir/src/OutputLayer.cpp.o
+NeuralNetwork: CMakeFiles/NeuralNetwork.dir/src/NeuralNet.cpp.o
 NeuralNetwork: CMakeFiles/NeuralNetwork.dir/src/RandomUtils.cpp.o
 NeuralNetwork: CMakeFiles/NeuralNetwork.dir/build.make
 NeuralNetwork: CMakeFiles/NeuralNetwork.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/alex/sciebo/Computer Science/C++/NeuralNetwork/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_6) "Linking CXX executable NeuralNetwork"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir="/home/alex/sciebo/Computer Science/C++/NeuralNetwork/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable NeuralNetwork"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/NeuralNetwork.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

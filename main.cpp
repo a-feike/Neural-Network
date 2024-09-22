@@ -2,6 +2,9 @@
 #include "Neuron.h"
 #include "Layer.h"
 #include "InputLayer.h"
+#include "HiddenLayer.h"
+#include "OutputLayer.h"
+#include "NeuralNet.h"
 
 int main() {
 
@@ -23,15 +26,41 @@ int main() {
     std::cout << inputLayer1;
     std::cout << "-------------------" << std::endl;
 
+    std::cout << "Test hiddenLayer" << std::endl;
+    std::cout << "Generate an hidden Layer with 2 Neurons" << std::endl;
+    HiddenLayer hiddenLayer1(2);
+    std::cout << hiddenLayer1;
+    std::cout << "----" << std::endl;
+    std::cout << "Add 5 Neurons to hidden Layer" << std::endl;
+    hiddenLayer1.addNeurons(5);
+    std::cout << hiddenLayer1;
+    std::cout << "----" << std::endl;
+    std::cout << "Delete 2 Neurons from hidden Layer" << std::endl;
+    hiddenLayer1.deleteNeurons(2);
+    std::cout << hiddenLayer1;
+    std::cout << "-------------------" << std::endl;
+
+    std::cout << "Test outputLayer" << std::endl;
+    std::cout << "Generate an output Layer with 2 Neurons" << std::endl;
+    OutputLayer outputLayer1(2);
+    std::cout << outputLayer1;
+    std::cout << "-------------------" << std::endl;
+
     std::cout << "Test initWeights" << std::endl;
-    std::cout << "Test"<< std::endl;
-    Layer Layer2(2);
-    std::cout << "Test";
-    Layer Layer3(3);
-    std::cout << "Test";
-    Layer2.initWeights(Layer3);
-    std::cout << Layer2 ;
-    std::cout << Layer3 ;
+    inputLayer1.initWeights(hiddenLayer1);
+    hiddenLayer1.initWeights(outputLayer1);
+    std::cout << inputLayer1 ;
+    std::cout << hiddenLayer1;
+    std::cout << outputLayer1;
+
+    std::cout << "-------------------" << std::endl;    
+    std::cout << "Test Neural Net" << std::endl;
+    NeuralNet NeuralNet1;  
+    NeuralNet1.initNet(2,5,5,3); // #inputNeurons, #hiddenLayer, #hiddenLayer neurons, # outputNeurons
+    std::cout << NeuralNet1;
+
+
+
     
     
 

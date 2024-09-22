@@ -7,6 +7,16 @@
 class InputLayer: public Layer
 {
 public:
+
+    /**
+     * @brief Default constructor for the Layer class.
+     * 
+     * Initializes a new Layer object with default settings.
+     */
+    InputLayer();
+
+
+
     /**
      * @brief Constructs an InputLayer object with a specified number of neurons.
      *
@@ -15,17 +25,22 @@ public:
      * neurons.
      *
      * @param N The number of neurons to create in this input layer.
+     * @see Layer::Layer(const size_t & N)
      */
 	InputLayer(const size_t & N); 
 
+
+
     /**
-     * @brief Default destructor for the Layer class.
+     * @brief Default destructor for the InputLayer class.
      *
-     * This destructor is called when a Layer object is destroyed. 
+     * This destructor is called when an InputLayer object is destroyed. 
      * It does not perform any specific actions, as there are no dynamically
      * allocated resources to clean up in this class.
      */  
 	~InputLayer(){} 
+
+
 
 
     /**

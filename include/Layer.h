@@ -11,14 +11,24 @@ public:
     size_t numberOfNeuronsInLayer;               ///< Number of neurons in the layer.
 
     /**
+     * @brief Default constructor for the Layer class.
+     * 
+     * Initializes a new Layer object with default settings.
+     */
+    Layer();
+
+    /**
      * @brief Constructs a Layer object with a specified number of neurons.
      *
      * This constructor initializes the Layer with a given number of neurons, 
      * setting the `numberOfNeuronsInLayer` variable and creating a vector of 
-     * `Neuron` objects. Each `Neuron` is default-constructed and added to 
-     * the `listOfNeuronsInLayer`. 
+     * `Neuron` objects by calling initLayer(). Each `Neuron` is default-constructed 
+     * and added to * the `listOfNeuronsInLayer`. 
+     * This overloaded constructor is basically just a shortcut for using first the
+     * default constructor and then apply initLayer.
      *
      * @param N The number of neurons to create in this layer.
+     * @see initLayer()
      */
     Layer(const size_t & N);
 
@@ -31,6 +41,42 @@ public:
      * allocated resources to clean up in this class.
      */  
     ~Layer(){}
+
+
+    /**
+     * @brief Initializes the Layer with a specified number of neurons.
+     *
+     * This constructor initializes the Layer with a given number of neurons, 
+     * setting the `numberOfNeuronsInLayer` variable and creating a vector of 
+     * `Neuron` objects by calling initLayer(). Each `Neuron` is default-constructed 
+     * and added to * the `listOfNeuronsInLayer`. 
+     *
+     * @param N The number of neurons to create in this layer.
+     */
+    void initLayer(const size_t & N);
+
+
+
+    /**
+     * @brief Adds a specified number of neurons to the layer.
+     * 
+     * This function creates new Neuron objects and appends them to the `listOfNeuronsInLayer`.
+     * Each neuron is created using the default Neuron constructor.
+     * 
+     * @param numberOfAddedNeurons The number of neurons to be added to the layer.
+     */
+    void addNeurons(const size_t & numberOfAddedNeurons);
+
+    /**
+     * @brief Deletes a specified number of neurons from the layer.
+     * 
+     * This function removes neurons from the end of the `listOfNeuronsInLayer`.
+     * It will stop deleting either when the specified number of neurons has been removed
+     * or when the list becomes empty.
+     * 
+     * @param numberOfDeletedNeurons The number of neurons to be deleted from the layer.
+     */
+    void deleteNeurons(const size_t & numberOfDeletedNeurons);
 
     /**
      * @brief Initializes the weights between the current layer and the next layer.

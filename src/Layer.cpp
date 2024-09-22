@@ -2,16 +2,53 @@
 #include "Layer.h"
 #include "RandomUtils.h"
 
-// Constructor definition
+
+// default constructor
+Layer::Layer(){}
+
+// Overloaded constructor definition
 Layer::Layer(const size_t & N)
-    : numberOfNeuronsInLayer(N)        // Initialize numberOfNeuronsInLayer
 {
+    initLayer(N);
+}
+
+
+// Initialize Layer
+void Layer::initLayer(const size_t & N)
+{
+    numberOfNeuronsInLayer = N; 
     for (size_t i = 0; i < numberOfNeuronsInLayer; i++)
     {
         Neuron neuron; // call constructor: creating an object neuron of class Neuron
         listOfNeuronsInLayer.push_back(neuron); // add neuron to listOfNeuronsInLayer
     }   
 }
+
+
+// add neurons to layer
+void Layer::addNeurons(const size_t & numberOfAddedNeurons)
+{
+    for (size_t i = 0; i < numberOfAddedNeurons; i++)
+    {
+        Neuron neuron; // call constructor: creating an object neuron of class Neuron
+        listOfNeuronsInLayer.push_back(neuron); // add neuron to the end of listOfNeuronsInLayer
+    }   
+}
+
+// delete neurons from layer
+void Layer::deleteNeurons(const size_t & numberOfDeletedNeurons){
+    for (size_t i = 0; i < numberOfDeletedNeurons; i++)
+    {
+        if (!listOfNeuronsInLayer.empty()) {    //check that list is not empty
+            listOfNeuronsInLayer.pop_back();    // delete last neuron
+        }
+
+        else{
+            break;  // Exit the loop 
+        } 
+    }  
+}
+
 
 void Layer::initWeights(Layer & nextLayer){
     double rand; // variable for random values
@@ -35,6 +72,8 @@ void Layer::initWeights(Layer & nextLayer){
         
     }
 }
+
+
 
 // overload print
 std::ostream& operator<< (std::ostream & s, const Layer& obj){
